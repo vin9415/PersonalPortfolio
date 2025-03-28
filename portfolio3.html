@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinit Kumar Pandey - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #0b1e36;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            position: relative;
+            text-align: center;
+            padding: 150px 20px 100px;
+            background: linear-gradient(to bottom, #1e3c72, #2a5298);
+            color: white;
+            clip-path: ellipse(75% 100% at 50% 0%);
+        }
+
+        /* Fade-Zoom Animation */
+        @keyframes fadeZoom {
+            0% { opacity: 0; transform: scale(0.8); }
+            50% { opacity: 0.7; transform: scale(1.1); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+
+        .name {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            animation: fadeZoom 2s ease-in-out;
+            display: inline-block;
+        }
+
+        /* Hover Animation for Each Letter */
+        .name span {
+            display: inline-block;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .name span:hover {
+            transform: rotate(20deg) scale(1.2);
+            color: #1e90ff;
+        }
+
+        /* Intro (Static) */
+        .intro {
+            font-size: 1.5rem;
+            font-weight: 300;
+            color: #1e90ff;
+        }
+
+        .main-container {
+            padding: 50px 20px;
+            background-color: #0b1e36;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section h2 {
+            color: #1e90ff;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 600;
+            border-bottom: 3px solid #1e90ff;
+            display: inline-block;
+        }
+
+        .projects, .skills, .education {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background: #12264c;
+            border: 1px solid #1e3c72;
+            border-radius: 15px;
+            padding: 20px;
+            flex: 1 1 calc(33.333% - 20px);
+            max-width: calc(33.333% - 20px);
+            box-sizing: border-box;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(30, 144, 255, 0.5);
+        }
+
+        .card h3 {
+            color: #1e90ff;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #ccc;
+        }
+
+        .contact {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .contact a {
+            margin: 0 15px;
+            color: #1e90ff;
+            text-decoration: none;
+            font-size: 2rem;
+            transition: color 0.3s;
+        }
+
+        .contact a:hover {
+            color: #fff;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e3c72;
+            color: #fff;
+            font-size: 1rem;
+            clip-path: ellipse(75% 100% at 50% 100%);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Name with both fade-zoom and hover animation -->
+        <h1 class="name">
+            <span>H</span><span>i</span>, <span>I</span> <span>a</span><span>m</span> 
+            <span>V</span><span>i</span><span>n</span><span>i</span><span>t</span> 
+            <span>K</span><span>u</span><span>m</span><span>a</span><span>r</span> 
+            <span>P</span><span>a</span><span>n</span><span>d</span><span>e</span><span>y</span>
+        </h1>
+        <!-- Static Intro -->
+        <p class="intro">Data Science Enthusiast | Developer | Problem Solver</p>
+    </header>
+
+    <div class="main-container">
+        <div class="greeting">
+            <p>Welcome to my portfolio! I'm glad you're here. Let's explore my journey.</p>
+        </div>
+
+        <div class="section">
+            <h2>Internship</h2>
+            <p><strong>Data Science Intern</strong> - CipherByte Technologies (June 2024 - July 2024)</p>
+            <ul>
+                <li>Conducted unemployment analysis using Python to identify trends and provide insights.</li>
+                <li>Developed a machine learning model for email spam detection using Python.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="projects">
+                <div class="card">
+                    <h3>Sales Dashboard</h3>
+                    <p>Built an interactive Tableau dashboard analyzing U.S. market trends and performance.</p>
+                    <p><a href="https://github.com/vin9415/Dashboard" target="_blank">GitHub Link</a></p>
+                </div>
+                <div class="card">
+                    <h3>Email Spam Detection</h3>
+                    <p>Developed a machine learning model to classify emails using text-based features.</p>
+                    <p><a href="https://github.com/vin9415/CBT" target="_blank">GitHub Link</a></p>
+                </div>
+                <div class="card">
+                    <h3>Portfolio Website</h3>
+                    <p>Built a responsive portfolio website showcasing projects and achievements.</p>
+                    <p><a href="https://github.com/vin9415/Persinoal" target="_blank">GitHub Link</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Certificates</h2>
+            <ul>
+                <li>Data Structures and Algorithms - Board Infinity (July 2024)</li>
+                <li>Cloud Computing - NPTEL (July 2024)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Technical Skills</h2>
+            <div class="skills">
+                <p><strong>Languages:</strong> C++, Java, C, Python</p>
+                <p><strong>Frameworks:</strong> R Programming, DBMS (MySQL), NumPy, Pandas</p>
+                <p><strong>Skills:</strong> Data Structures, Problem-Solving, Responsive Web Design</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education">
+                <div class="card">
+                    <h3>Lovely Professional University</h3>
+                    <p>B.Tech in Computer Science and Engineering (2022-Present)</p>
+                    <p>CGPA: 7.4</p>
+                </div>
+                <div class="card">
+                    <h3>NSVM, Ballia</h3>
+                    <p>12th with Science (2019-2020)</p>
+                    <p>Percentage: 80.3%</p>
+                </div>
+                <div class="card">
+                    <h3>NSVM, Ballia</h3>
+                    <p>10th with Science (2017-2018)</p>
+                    <p>Percentage: 92.23%</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section contact">
+            <h2>Contact</h2>
+            <p><a href="mailto:iamvinitpandey@gmail.com"><i class="fas fa-envelope"></i></a>
+            <a href="https://github.com/vin9415" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com/in/vinitpandey9415" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Vinit Kumar Pandey. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
